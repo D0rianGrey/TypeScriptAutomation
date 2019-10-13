@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "sourceMap": true,
+    "outDir": "./built",
+    "types": ["@wdio/sync","mocha", "node"] /* Type declaration files to be included in compilation. */
+  },
+  "exclude": [
+    "node_modules/"
+  ]
+}
