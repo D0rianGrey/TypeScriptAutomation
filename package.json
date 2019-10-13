@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@types/chai": "^4.1.7",
-    "@types/faker": "4.1.5",
     "@types/mocha": "^5.2.6",
     "@types/node": "^10.12.21",
     "@wdio/cli": "5.6.2",
@@ -20,8 +19,6 @@
     "@wdio/spec-reporter": "5.6.0",
     "@wdio/sync": "5.6.0",
     "chai": "^4.2.0",
-    "chai-sorted": "^0.2.0",
-    "faker": "4.1.0",
     "mocha": "^5.2.0",
     "ts-node": "^8.0.2",
     "tsconfig-paths": "^3.8.0",
