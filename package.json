@@ -19,6 +19,7 @@
     "@wdio/spec-reporter": "5.6.0",
     "@wdio/sync": "5.6.0",
     "chai": "^4.2.0",
+    "chai-sorted": "^0.2.0",
     "mocha": "^5.2.0",
     "ts-node": "^8.0.2",
     "tsconfig-paths": "^3.8.0",
