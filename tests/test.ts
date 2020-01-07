@@ -1,4 +1,5 @@
 import * as faker from "faker";
+import { expect } from "chai";
 
 describe('Protractor', function () {
 
@@ -35,7 +36,12 @@ describe('Protractor', function () {
         $(createButton).click();
         browser.pause(5000);
 
-        //time where I finished course 1:16:43
+
+        expect(browser.getUrl()).not.to.contain("create_account");
+        expect($(".alert.alert-success").isDisplayed()).to.equal(true);
+        let text = $(".alert.alert-success").getText();
+        expect(text).to.contain('Your customer account has been created.');
+
 
     });
 });
