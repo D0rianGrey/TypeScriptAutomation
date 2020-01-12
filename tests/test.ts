@@ -1,7 +1,11 @@
 import * as faker from "faker";
-import { expect } from "chai";
+import {expect} from "chai";
 
 describe('Protractor', function () {
+
+    beforeEach(function () {
+        console.log("Before each")
+    });
 
     it('WDIO', function () {
         browser.url('/create_account');
@@ -41,7 +45,13 @@ describe('Protractor', function () {
         expect($(".alert.alert-success").isDisplayed()).to.equal(true);
         let text = $(".alert.alert-success").getText();
         expect(text).to.contain('Your customer account has been created.');
+        browser.pause(10000);
 
 
+    });
+
+    it('Registration', function () {
+        console.log("DONE: should be successful")
+        browser.pause(10000);
     });
 });
