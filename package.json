@@ -29,6 +29,7 @@
     "faker": "4.1.0"
   },
   "devDependencies": {
+    "@wdio/cucumber-framework": "^5.16.15",
     "standard": "^14.3.1"
   }
 }

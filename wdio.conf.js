@@ -3,6 +3,7 @@ exports.config = {
     port: 4444,
     path: "/wd/hub",
     specs: ["./tests/test.ts"],
+    //specs: ["./features/*.feature"],
     sync: true,
     services: ["selenium-standalone"],
     capabilities: [
@@ -12,6 +13,7 @@ exports.config = {
     ],
     baseUrl: "http://ip-5236.sunline.net.ua:38015",
     framework: "mocha",
+    //framework: "cucumber",
     mochaOpts: {
         ui: "bdd",
         timeout: 120000
